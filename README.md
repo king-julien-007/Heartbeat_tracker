@@ -1,16 +1,12 @@
-# camera_project
+Heartbeat Detector App
 
-A new Flutter project.
+Here’s a detailed README.md for your heartbeat detection Flutter project:
 
-## Getting Started
+Heartbeat Detector App
+The Heartbeat Detector is a Flutter app that uses the camera and Google's ML Kit Face Detection API to estimate the user's heart rate by analyzing the color changes in the skin on the forehead. The app processes the camera feed in real-time, detects the face, and calculates the heart rate using the green channel from the camera's image stream.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Features
+Real-time heart rate detection: Uses the front camera to detect a face and extract green channel values for heart rate analysis.
+Face detection: Utilizes Google's ML Kit Face Detection API to track the face and focus on the forehead region.
+FFT Analysis: Applies Fast Fourier Transform (FFT) on the green channel data to extract the dominant frequency, which corresponds to the heart rate.
+Bandpass filter: Filters out noise from the green channel data to ensure accurate heart rate calculation.
